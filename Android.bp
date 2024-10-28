@@ -9548,7 +9548,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.diaghal@1.0",
+    name: "vendor.qti.diaghal@1.0_vendor",
+    stem: "vendor.qti.diaghal@1.0",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13396,7 +13397,7 @@ cc_prebuilt_binary {
                 "libqsocket",
                 "libqrtr",
                 "liblog",
-                "vendor.qti.diaghal@1.0",
+                "vendor.qti.diaghal@1.0_vendor",
                 "libhidlmemory",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
