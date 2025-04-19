@@ -16,6 +16,84 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqcbassboost",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libqcbassboost.so",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libqcbassboost.so",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+    relative_install_path: "soundfx",
+    proprietary: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcreverb",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libqcreverb.so",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libqcreverb.so",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+    relative_install_path: "soundfx",
+    proprietary: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcvirt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libqcvirt.so",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libqcvirt.so",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+    relative_install_path: "soundfx",
+    proprietary: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
     name: "c2.dolby.avc.dec",
     owner: "xiaomi",
     strip: {
